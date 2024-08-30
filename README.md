@@ -24,13 +24,12 @@
 
 ## Tech Stack
 
-- **Frontend**: React, Redux
+- **Frontend**: React, HTML, CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB, Mongoose
 - **Authentication**: JWT (JSON Web Tokens), Cookies
 - **File Storage**: Cloudinary for profile image uploads
-- **Charts**: Chart.js or any relevant charting library
-- **Deployment**: (Optional) Details if deployed on a platform like Heroku, Vercel, or Netlify
+- **Charts**: Recharts
 
 ## Usage
 
