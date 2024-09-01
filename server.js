@@ -50,6 +50,11 @@ app.use('/api/v1/jobs', authenticateUser, jobRouter);
 app.use('/api/v1/users', authenticateUser, userRouter);
 app.use('/api/v1/auth', authRouter);
 
+// Make client files available in public folder
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './public', 'index.html'));
+});
+
 // Handle undefined routes
 app.use('*', (req, res) => {
     res.status(404).json( { msg: 'Not Found' });
