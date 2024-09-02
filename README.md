@@ -4,19 +4,23 @@
 
 ## Table of Contents
 
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)
-3. [Usage](#usage)
-4. [API Endpoints](#api-endpoints)
-5. [Authentication](#authentication)
-6. [Analytics & Charts](#analytics--charts)
-7. [File Uploads](#file-uploads)
-8. [Future Improvements](#future-improvements)
-9. [License](#license)
+1. [Live Demo](#live-demo)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Usage](#usage)
+5. [API Endpoints](#api-endpoints)
+6. [Authentication](#authentication)
+7. [Analytics & Charts](#analytics--charts)
+8. [File Uploads](#file-uploads)
+9. [Future Improvements](#future-improvements)
+10. [License](#license)
+
+## Live Demo
+https://jobify-preetpatel.onrender.com/
 
 ## Features
 
-- **Job Tracking**: Easily track job applications with statuses like pending, accepted, and rejected.
+- **Job Tracking**: Easily track job applications with statuses like pending, interview, and rejected.
 - **Analytics**: Visualize your application process with charts showing applications per month and status distributions.
 - **Profile Management**: Upload and manage profile images through a simple interface.
 - **Authentication**: Secure login and registration using JWT and cookies.
@@ -30,6 +34,7 @@
 - **Authentication**: JWT (JSON Web Tokens), Cookies
 - **File Storage**: Cloudinary for profile image uploads
 - **Charts**: Recharts
+- **Deployment**: Render
 
 ## Usage
 
@@ -48,14 +53,15 @@ Register as a new user, log in, and start tracking your job applications. The ma
 
 ## API Endpoints
 
-| Method | Endpoint       | Description                                |
-| ------ | -------------- | ------------------------------------------ |
-| POST   | `/api/register`| Register a new user                        |
-| POST   | `/api/login`   | Log in an existing user                    |
-| GET    | `/api/jobs`    | Get all job applications for the logged-in user |
-| POST   | `/api/jobs`    | Add a new job application                  |
-| PUT    | `/api/jobs/:id`| Update a job application                   |
-| DELETE | `/api/jobs/:id`| Delete a job application                   |
+| Method | Endpoint                  | Description                                |
+| ------ | ------------------------- | ------------------------------------------ |
+| POST   | `/api/v1/auth/register`   | Register a new user                        |
+| POST   | `/api/v1/auth/login`      | Log in an existing user                    |
+| GET    | `/api/v1/jobs`            | Get all job applications for the logged-in user |
+| POST   | `/api/v1/jobs`            | Add a new job application                  |
+| GET    | `/api/v1/jobs/:id`        | Get a specific job application             |
+| PATCH  | `/api/v1/jobs/:id`        | Update a job application                   |
+| DELETE | `/api/v1/jobs/:id`        | Delete a job application                   |
 
 
 ## Authentication
